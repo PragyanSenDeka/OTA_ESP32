@@ -2,12 +2,12 @@
 #include <HTTPClient.h>
 #include <HTTPUpdate.h>
 #include <ArduinoJson.h>
-
+#include <WiFiClientSecure.h>
 const char* ssid = "TBE3162";
 const char* password = "f38U175!";
 
 #define CURRENT_VERSION "1.0"
-const char* versionURL = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/version.json";
+const char* versionURL = "https://raw.githubusercontent.com/PragyanSenDeka/OTA_ESP32/main/OTA/version.json";
 
 void checkForUpdate() {
   WiFiClientSecure client;
